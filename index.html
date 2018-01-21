@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>website</title>
     <link rel="stylesheet" href="css/index.css">
+
+
 </head>
-<body>
-    <p>this is a paragraph</p>
- <script src="js/index.js"></script>   
+
+ <body onLoad="hideElems();">
+    <div class='mainwrapper'>
+        <fieldset>
+            <div class="components">
+                <label>
+                    <input type="checkbox" class='maincheck' name="1" value="">First Checkbox
+                </label>
+                <label class="hide">
+                    first name:
+                    <input type="text" class="hide" name="name" value="some text">
+                </label>
+                <label class="hide">
+                    last name:
+                    <input type="text" class="hide" name="name" value="">
+                </label>
+                <input type="submit" class="hide" value="Send">
+            </div>
+
+            <div class="components">
+                <label>
+                    <input type="checkbox" class='maincheck' name="2" value="">Second Checkbox
+                </label>
+                <label class="hide">
+                    <input type="radio" class="hide" name="drink" value="tea">Tea
+                </label>
+                <label class="hide">
+                    <input type="radio" class="hide" name="drink" value="coffee">Coffee
+                </label>
+                <button type="button" class="hide"> Click Me</button>
+                <label class="hide">
+                    <input type="checkbox" class="hide" name="fruits" value="banana">banana
+                    <input type="checkbox" class="hide" name="fruits" value="orange">orange
+                    <input type="checkbox" class="hide" name="fruits" value="apple">apple
+                </label>
+            </div>
+
+
+            <div class="components">
+                <label>
+                    <input type="checkbox" class='maincheck' name="3" value="">Third Checkbox
+                </label>
+                <button type="button" class="hide">Some button</button>
+                <textarea name="area" class="hide" rows="4" cols="60" placeholder="About..."></textarea>
+            </div>
+
+
+            <div class="components">
+                <label>
+                    <input type="checkbox" class='maincheck' name="4" value="">Fourth Checkbox
+                </label>
+                <label>
+                    <select name="films" class="hide">
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="horor">Horor</option>
+                        <option value="fantasy">Fantasy</option>
+                    </select>
+                </label>
+                <label>
+                    <select size="4" multiple="" class="hide">
+                        <option value="Cola" selected="">Cola</option>
+                        <option value="Sprite">Sprite</option>
+                        <option value="Fanta">Fanta</option>
+                        <option value="Juice">Juice</option>
+                    </select>
+                </label>
+            </div>
+
+        </fieldset>
+    </div>
+
+    <script src="js/index.js"></script>
+
 </body>
+
 </html>
